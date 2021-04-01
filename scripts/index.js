@@ -311,11 +311,11 @@ const bot = () => {
 const botPlayTest = (index) => {
   if (typeof index !== "number") return modal("O bot não retornou um número");
 
-  if ($fieldList[index].textContent)
-    modal(`O bot ${move} tentou jogar na cada de index ${index} que já foi jogada`);
   if (index > 8) return modal("ERROR: Number is too big");
   if (index < 0) return modal("ERROR: Number is too small");
   if (index % 1 !== 0) return modal("ERROR: The number is not an integer");
+  if ($fieldList[index]?.textContent)
+    modal(`O bot ${move} tentou jogar na cada de index ${index} que já foi jogada`);
 
   return true;
 };

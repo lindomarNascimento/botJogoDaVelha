@@ -3,6 +3,7 @@
 const marcosScript = (scenery, myMove) => {
   // script teste
   let moveIndex = null
+
   const move = () => {
     const randomNumber = Math.floor(Math.random() * 9)
     
@@ -16,7 +17,7 @@ const marcosScript = (scenery, myMove) => {
 
   // your script here
 
-  return moveIndex
+  return -1
 }
 
 
