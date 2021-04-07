@@ -31,7 +31,6 @@ const marcosScript = (scenery, myMove) => {
 
   function minhajogada() {
     const jogadasAdversario = ondeOAdversarioJogou(scenery, myMove)
-    console.log('scenery :>> ', jogadasAdversario);
     const minhasJogadas = ondeEuJoguei(scenery, myMove)
 
     const camposJogados = [...jogadasAdversario, ...minhasJogadas]
